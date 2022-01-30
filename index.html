@@ -8,7 +8,8 @@
     <meta name="author" content="Dev Evolution">
     <meta name="description" content="Nós da dev evolution criamos soluções de marketing para sua empresa vender mais, da melhor forma.">
     <title>Agência de Marketing Digital | Dev Evolution</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/OIP.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
@@ -19,21 +20,22 @@
                 <a href="/">Dev.Evolution</a>
             </div><!--logo__menu-->
             <div class="items__menu-desktop">
-                <a href="#">Sobre</a>
-                <a href="#">Serviços</a>
-                <a href="#">contato</a>
-                <a href="#">Quero um orçamento</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#contato">contato</a>
+                <a href="#contato">Quero um orçamento</a>
             </div><!--items__menu-desktop-->
-            <div id="icone" class="items__menu-mobile">
-                <i class="fa fa-fw fa-bars"></i>
-               <!-- <i id="teste" class="fa fa-bars" aria-hidden="true"></i>-->
+            <div class="items__menu-mobile">
+                <a class="iconx">
+                    <i class="fa fa-bars"></i>
+                </a>
                 <div class="menu__mobile">
-                    <a href="#" onclick="mobile()">Sobre</a>
-                    <a href="#" onclick="mobile()">Serviços</a>
-                    <a href="#" onclick="mobile()">contato</a>
-                    <a href="#" onclick="mobile()">Quero um orçamento</a>
-                </div>
-            </div>
+                    <a href="#sobre" onclick="mobile()">Sobre</a>
+                    <a href="#servicos" onclick="mobile()">Serviços</a>
+                    <a href="#contato" onclick="mobile()">contato</a>
+                    <a href="#contato" onclick="mobile()">Quero um orçamento</a>
+                </div><!--menu__mobile-->
+            </div><!--items__menu-mobile-->
             <div class="chamada__menu">
                 <h2>Você vendendo mais com automação web.</h2>
                 <p>Nós criamos soluções de marketing para sua empresa vender mais, da melhor forma.</p>
@@ -45,7 +47,7 @@
         </div><!--container-->
     </section><!--header__menu-->
 
-    <section class="description__dev">
+    <section id="sobre" class="description__dev">
         <div class="container" style="max-width: 800px;">
             <p>Com anos de experiência em desenvolvimento web e automação de marketing, a <b>DevEvolution</b> traz solucões que ajudam o seu time a vender mais tanto em segmentos B2C quanto B2B.</p>
         </div><!--container-->
@@ -58,7 +60,7 @@
             <p>Converse com a nossa equipe ainda hoje e crie um plano de marketing para o seu negócio!</p>
             </div><!--description__text-->
             <div class="description__img">
-                <img src="images/mockup-1.jpg">
+                <img src="images/mockup-1.png">
             </div><!--description__img-->
         </div><!--container-->
     </section><!--description__dev2-->
@@ -73,7 +75,7 @@
         </div><!--container-->
     </section><!--description__dev3-->
 
-    <section class="services__dev">
+    <section id="servicos" class="services__dev">
         <div class="container" style="max-width: 1100px;">
             <div class="title__services">
                 <h3>Como podemos ajudar sua empresa<br/><i class="fa fa-angle-down" aria-hidden="true"></i></h3>
@@ -83,7 +85,7 @@
                 <div class="box__services-wraper">
                     <h2>E-mail Marketing</h2>
                     <p>Aprenda como utilizar e-mail marketing na sua empresa para alavancar suas vendas de uma forma automatizada.</p>
-                    <a href="#">Orçamento</a>
+                    <a href="#contato">Orçamento</a>
                 </div>
             </div><!--box__services-->
 
@@ -92,7 +94,7 @@
                 <div class="box__services-wraper">
                     <h2>Páginas de Venda</h2>
                     <p>Criamos páginas de venda 100% otimizadas e voltadas para conversões. Solicite um orçamento e tenha hoje mesmo a sua página para vender na internet.</p>
-                    <a href="#">Orçamento</a>
+                    <a href="#contato">Orçamento</a>
                 </div>
             </div><!--box__services-->
 
@@ -101,7 +103,7 @@
                 <div class="box__services-wraper">
                     <h2>Páginas de Captura e Inscrição</h2>
                     <p>Capture o e-mail dos visitantes em seu site e crie uma base de leads para sua empresa.</p>
-                    <a href="#">Orçamento</a>
+                    <a href="#contato">Orçamento</a>
                 </div>
             </div><!--box__services-->
 
@@ -110,7 +112,7 @@
                 <div class="box__services-wraper">
                     <h2>SEO & Marketing de Conteúdo</h2>
                     <p>Aplicamos SEO no seu website para o mesmo ficar bem posicionado nos mecanismos de busca e ser achado facilmente.</p>
-                    <a href="#">Orçamento</a>
+                    <a href="#contato">Orçamento</a>
                 </div>
             </div><!--box__services-->
 
@@ -119,7 +121,7 @@
                 <div class="box__services-wraper">
                     <h2>ADWords & Facebook ADS</h2>
                     <p>Criamos campanhas altamente otimizadas para o seu negócio gerar mais vendas pelo menor custo.</p>
-                    <a href="#">Orçamento</a>
+                    <a href="#contato">Orçamento</a>
                 </div>
             </div><!--box__services-->
 
@@ -128,7 +130,7 @@
                 <div class="box__services-wraper">
                     <h2>Consultoria de Marketing Digital</h2>
                     <p>Precisa de ajuda e planejamento de marketing no seu negócio? Fale com a Danki Code, hoje mesmo, para criarmos um plano de marketing a longo prazo e 100% voltado para vendas.</p>
-                    <a href="#">Orçamento</a>
+                    <a href="#contato">Orçamento</a>
                 </div>
             </div><!--box__services-->
         </div><!--container-->
@@ -154,7 +156,7 @@
         </div><!--container-->
     </section><!--portfolio-->
 
-    <section class="formulario">
+    <section id="contato" class="formulario">
         <h2>Um orçamento ou alguma dúvida?</h2>
         <div class="container">
             <form>
@@ -166,7 +168,7 @@
             </form>
         </div><!--container-->
     </section><!--formulario-->
-
+        <a id="icon-smoothscroll-top"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>
     <footer>
         <div class="container">
             <div class="box__footer">
@@ -187,6 +189,7 @@
     </footer>
     <script src="js/menu-mobile.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/icone-menu-mobile.js"></script>
+    <script src="js/menu-scroll.js"></script>
+    <script src="js/back-to-top.js"></script>
 </body>
 </html>
